@@ -59,7 +59,25 @@ Once the outliers are removed for the second histogram, we see that the range re
 ![Customer Service Calls Outliers Removed](./images/custserv_calls_out.png)
 
 ## Conclusions/Recommendations
-Summarize the main findings from your analysis. If applicable, provide recommendations based on the insights gained from the data.
+When creating my machine learning model, I used Random Forest, Logistic Regression and K Nearest Neighbors (KNN). By testing different test sizes (and neighbors for KNN), I was able to find the optimal parameters for each. The results are below. 
+
+| Model | Accuracy | Precision (True) | Precision (False) | Recall (True) | Recall (False) |
+| ----- | -------- | --------- | ------ | -- | -- |
+| Random Forest | 0.91 | 0.8 | 0.93 | 0.55 | 0.95 |
+| Logisitic Regression | 0.85 | 0.48 | 0.86 | 0.07 | 0.99 |
+| KNN | 0.90 | 0.75 | 0.91 | 0.45 | 0.98 |
+
+As we can see, random forest did the best, as it has the best balance of accurately finding False values (customers do not churn), while also having a relatively low number of false negatives (predict they will stay when they actually churn).
+
+Below is the confusion matrix for the Random Forest Regression. 
+
+![Random Forest Conf Matrix](./images/rf_conf.png)
+
+The above confusion matrix tells us the number of True Positives (bottom right, predicted true, is true), True Negatives (top left, predicted false, is false), False Positives (top right, predicted true, is false) and False Negatives (bottom left, predicted false, is true)
+
+So in this case, the model accurately predicted 780 False results, and 74 True results. 
+
+However, it missed 61 true results, and 19 false results. So, 61 customers that it predicted would not churn did, and 19 customers it predicted would churn didn't. 
 
 ## Additional Information
 Include any additional information, references, or resources that might be relevant for understanding the analysis.
