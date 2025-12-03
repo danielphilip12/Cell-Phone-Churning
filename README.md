@@ -1,12 +1,11 @@
 # Cell-Phone-Churning
 
 ## Problem Statement
-- Provide a brief background or context for your analysis. Explain why the data is relevant or interesting.
+- This dataset contains customer information about their cell phone plan usage, such as the number of calls made, account length, customer service calls, etc. 
 
-- Clearly state the purpose of your analysis. What are you aiming to achieve or communicate through this analysis? Who would this benefit?
+- The purpose of this analysis and model is to predict whether a customer will churn (stop their plan) or stay. 
 
 ## Data Dictionary
-Include a data dictionary to explain the meaning of each variable or field in the dataset. You can also link to an external data dictionary.
 
 | Column Name | Description |
 |-------------|-------------|
@@ -30,20 +29,26 @@ Include a data dictionary to explain the meaning of each variable or field in th
 ## Executive Summary
 
 ### Data Cleaning Steps
-Outline the steps taken to clean and preprocess the data before analysis.
+The dataset contains no missing values, and outliers are all valid data. However, for analysis purpose, I did make plots showing the distributions of a few columns with and without the outliers, to see if they distribution type remains the same. 
 
 ### Key Visualizations
-Include key visualizations that highlight important aspects of the data. Use graphs, charts, or any other visual representation to make your points.
 
-#### Visualization 1: [Title]
-[Description and interpretation of the first visualization.]
 
-![Visualization 1](path/to/image1.png)
+#### Visualization 1: [Day Calls]
+The first histogram is the original data, where we can see that the range goes from 0 calls to over 150 calls. It seems to follow a bell curve normal distribution, but does have a slight left skew. 
 
-#### Visualization 2: [Title]
-[Description and interpretation of the second visualization.]
+When the outliers are removed (second histogram), we can see better that the distribution follows a normal distribution, without any skew. 
 
-![Visualization 2](path/to/image2.png)
+![Day Calls Original](./images/day_calls_org.png)
+![Day Calls Outliers Removed](./images/day_calls_out.png)
+
+#### Visualization 2: [Account Length]
+The first histogram shows the original distribution, which, like day calls, seems to be bell-curved, but with a slight right skew. 
+
+Once the outliers are removed for the second histogram, we see the normal distrution more clearly. 
+
+![Account Length Original](./images/account_length_org.png)
+![Account Length Outliers Removed](./images/account_length_out.png)
 
 ## Conclusions/Recommendations
 Summarize the main findings from your analysis. If applicable, provide recommendations based on the insights gained from the data.
