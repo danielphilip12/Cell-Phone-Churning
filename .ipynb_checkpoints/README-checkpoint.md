@@ -50,6 +50,14 @@ Once the outliers are removed for the second histogram, we see the normal distru
 ![Account Length Original](./images/account_length_org.png)
 ![Account Length Outliers Removed](./images/account_length_out.png)
 
+#### Visualization 3: [Customer Service Calls]
+The first histogram shows the original distribution of the customer service calls, showing that there are a few customers who call quite a bit, while most call only a couple times. 
+
+Once the outliers are removed for the second histogram, we see that the range reduces to be 0 to 3 calls, meaning that customers who call 4 or more times are an abnormaility. 
+
+![Customer Service Calls Original](./images/custserv_calls_org.png)
+![Customer Service Calls Outliers Removed](./images/custserv_calls_out.png)
+
 ## Conclusions/Recommendations
 Summarize the main findings from your analysis. If applicable, provide recommendations based on the insights gained from the data.
 
