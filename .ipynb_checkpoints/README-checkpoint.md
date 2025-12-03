@@ -10,9 +10,22 @@ Include a data dictionary to explain the meaning of each variable or field in th
 
 | Column Name | Description |
 |-------------|-------------|
-| Column1     | Description1 |
-| Column2     | Description2 |
-| ...         | ...         |
+| account_length|  amount of time the customer has had an account | 
+| vmail_message |     number of voicemail messages a customer has | 
+| day_mins   |        how many minutes calls lasted during the daytime | 
+| day_calls  |        number of calls in the daytime| 
+| day_charge  |       charges accumulated during the daytime| 
+| eve_mins    |       how many minutes calls lasted during the evening| 
+| eve_calls    |       number of calls in the evening| 
+| eve_charge  |       charges accumulated during the evening| 
+| night_mins  |        how many minutes calls lasted during the night| 
+| night_calls |        number of calls in the night| 
+| night_charge  |     charges accumulated during the night| 
+| intl_mins     |      how many minutes for international calls | 
+| intl_calls   |       number of calls internationally | 
+| intl_charge   |     charges for international calls| 
+| custserv_calls |    number of customer service calls | 
+| churn          |    did the customer churn or not | 
 
 ## Executive Summary
 
